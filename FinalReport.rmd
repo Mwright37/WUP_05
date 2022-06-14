@@ -54,6 +54,14 @@ Based on the plot not many females contracted the AIDS virus, but those that had
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+table1 <- xtabs(~infected + treatment,data=females)
+rowPerc(table1)
+colPerc(table1)
+```
+
+Based on the table a little over 58% of females that took the Aids drug still contracted AIDS, and 41% of the females took the placebo. Based on the results the females that had taken the preventative drug still contracted the virus, leading to believe the drug did not work.  
+
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
